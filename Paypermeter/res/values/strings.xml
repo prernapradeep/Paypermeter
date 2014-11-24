@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pay Per Meter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_pt">Starting Point</string>
+    <string name="dest_pt">Destination Point</string>
+    <string name="calculate">Calculate Approx?</string>
+    <string name="enter_start">Enter Start Point</string>
+    <string name="enter_dest">Enter Destination</string>
+    <string name="start_journey">Start Journey</string>
+    <string name="show_approx">Approx Fare*</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_distance_travelled">Distance Travelled</string>
+    <string name="versus">VS</string>
+    <string name="show_actual">Actual Fare</string>
+    <string name="report">Report</string>
+    <string name="arrive_dest">You have arrived at your destination!</string>
+    <string name="title_activity_report_driver">Report Driver</string>
+    <string name="confirm_report_msg">You have chosen to report this driver</string>
+    <string name="form">Fill Complaint Form</string>
+    <string name="pic">Submit Photo</string>
+    <string name="or">OR</string>
+    <string name="pick_option">Choose one</string>
+
+    <string-array name="choose_one">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+
+    <string name="title_activity_submit_photo_complaint">Submit Photo Complaint</string>
+    <string name="submit_complaint">Submit Complaint</string>
+    <string name="comments">Any Additional Comments: </string>
+    <string name="title_activity_text_complaint_form">Complaint Form</string>
+    <string name="warning">Mandatory to fill atleast one of the given fields!</string>
+    <string name="driverl">Driver License Number</string>
+    <string name="regnum">Vehicle Reg Number</string>
+    <string name="policenum">Police Serial Number</string>
+    <string name="badgenum">Badge Number</string>
+    <string name="disclaimer">*This is an approximate value and is subject to variation.</string>
+
+</resources>

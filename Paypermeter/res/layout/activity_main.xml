@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    
+	<fragment
+		android:id="@+id/map"
+		android:name="com.google.android.gms.maps.SupportMapFragment"     
+		android:layout_width="match_parent"        
+		android:layout_height="match_parent"
+		android:layout_above="@+id/StartJourney"
+		android:layout_below="@+id/CalculateApprox" />
+
+    <EditText
+        android:id="@+id/Start_Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:ems="10"
+        android:hint="@string/enter_start"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:hint="@string/enter_dest"
+        android:inputType="text">
+    </EditText>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/StartJourney"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="15dp"
+         android:text="@string/start_pt"
+         android:textSize="24sp" />
+
+     <Button
+         android:id="@+id/CalculateApprox"
+         style="?android:attr/borderlessButtonStyle"
+         android:layout_width="250dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/EditText01"
+         android:layout_centerHorizontal="true"
+         android:text="@string/calculate"
+         android:textSize="22sp"
+         android:onClick ="displayApprox" />
+
+     <TextView
+         android:id="@+id/TextView01"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/Start_Location"
+         android:layout_below="@+id/Start_Location"
+         android:layout_marginTop="11dp"
+         android:text="@string/dest_pt"
+         android:textSize="24sp" />
+
+     <Button
+         android:id="@+id/StartJourney"
+         android:layout_width="350dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignRight="@+id/map"
+         android:layout_marginBottom="0dp"
+         android:text="@string/start_journey"
+         android:textSize="24sp" />
+
+</RelativeLayout>
